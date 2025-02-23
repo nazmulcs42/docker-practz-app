@@ -1,11 +1,12 @@
-From node:alpine
+FROM node:22.0.0-alpine
+
 WORKDIR /app
+
+RUN npm install -g nodemon
 
 COPY . .
 
 RUN npm install
-
-
 
 EXPOSE 3000
 
