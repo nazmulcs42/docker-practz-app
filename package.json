@@ -1,0 +1,16 @@
+{
+  "name": "practz-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "Md.Nazmul Islam",
+  "license": "ISC",
+  "description": "Docker practice",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
