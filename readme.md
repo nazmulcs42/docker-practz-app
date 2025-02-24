@@ -92,6 +92,7 @@ CMD ["npm", "run", "start:dev"]
 - or
 ### Build Docker container and volumes from the image by using nodemon package so that  live changes can affect the container image
 `$ docker run --name docker-practz-container -p 3000:3000 --rm -v D:/pratz/docker-practz/practz-01:/app  docker-practz-img`
+`$docker run --name docker-practz-container -p 3000:3000 --rm -v D:/docker-practz-app:/app  docker-practz-img`
 
 
 ~ Simple Docker project setup Done! with docker image, container and volumes
