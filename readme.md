@@ -133,3 +133,38 @@ Select an image to pull into your local repo. Then make a pull request for the t
 - `$ docker-compose down -v`
 - `$ docker-compose up -d`
 - `$ docker-compose up -d --build`
+
+
+### docker-compose.yml
+```javascript
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    image: docker-practz-app
+    container_name: docker-practz-app
+    restart: always
+    ports:
+      - "3000:3000"
+    # tty: true
+    # environment:
+    #   SERVICE_NAME: app
+    #   SERVICE_TAGS: dev
+    # volumes:
+    #   - data:/var/www/html
+    networks:
+      - docker-practz-network
+
+networks:
+  docker-practz-network:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local
+
+
+
+```
