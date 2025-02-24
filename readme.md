@@ -13,7 +13,7 @@
 - add index.js file and add basic node code to create and run simple api endpoints.
 
 
-#### Basic index.js file contents ----starts------
+### Basic index.js file contents ----starts------
 
 import express from 'express';
 import cors from 'cors';
@@ -33,10 +33,10 @@ app.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });
 
-#### Basic dockerfile index.js file contents ----ends------
+### Basic dockerfile index.js file contents ----ends------
 
 
-#### Basic dockerfile contents ----starts------
+### Basic dockerfile contents ----starts------
 
 FROM node:22.0.0-alpine
 
@@ -52,10 +52,10 @@ EXPOSE 3000
 
 CMD ["npm", "run", "start:dev"]
 
-#### Basic dockerfile contents ----ends------
+### Basic dockerfile contents ----ends------
 
 
-#### Basic Package.json file contents----starts----
+### Basic Package.json file contents----starts----
 
 {
   "name": "practz-01",
@@ -78,16 +78,16 @@ CMD ["npm", "run", "start:dev"]
   }
 }
 
-#### Basic Package.json file ----ends----
+### Basic Package.json file ----ends----
 
 
-#### Build Docker Image
+### Build Docker Image
 docker build -t docker-practz-img . 
 
-#### Build Docker container from the image
+### Build Docker container from the image
 docker run --name docker-practz-container -p 3000:3000 --rm docker-practz-img
 - or
-#### Build Docker container and volumes from the image by using nodemon package so that  live changes can affect the container image
+### Build Docker container and volumes from the image by using nodemon package so that  live changes can affect the container image
 docker run --name docker-practz-container -p 3000:3000 --rm -v D:/pratz/docker-practz/practz-01:/app  docker-practz-img
 
 
