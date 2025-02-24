@@ -1,4 +1,4 @@
-# ------------------------------------ DOCKER PRACTZ ------------------------------------
+#                 DOCKER PRACTZ
 
 
 ## Chapter 1: Basic Docker Configuration and Introduction
