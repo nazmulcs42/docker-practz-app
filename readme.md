@@ -14,7 +14,7 @@
 
 
 ### Basic index.js file contents ----starts------
-
+```javascript
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
@@ -33,10 +33,12 @@ app.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });
 
+```
 ### Basic dockerfile index.js file contents ----ends------
 
 
 ### Basic dockerfile contents ----starts------
+```javascript
 
 FROM node:22.0.0-alpine
 
@@ -52,10 +54,14 @@ EXPOSE 3000
 
 CMD ["npm", "run", "start:dev"]
 
+
+```
+
 ### Basic dockerfile contents ----ends------
 
 
 ### Basic Package.json file contents----starts----
+```javascript
 
 {
   "name": "practz-01",
@@ -78,6 +84,7 @@ CMD ["npm", "run", "start:dev"]
   }
 }
 
+```
 ### Basic Package.json file ----ends----
 
 
@@ -91,7 +98,7 @@ docker run --name docker-practz-container -p 3000:3000 --rm docker-practz-img
 docker run --name docker-practz-container -p 3000:3000 --rm -v D:/pratz/docker-practz/practz-01:/app  docker-practz-img
 
 
-- Simple Docker project setup Done! with docker image, container and volumes
+~ Simple Docker project setup Done! with docker image, container and volumes
 
 
 ## Chapter 2: Docker Composer Configuration and Introduction
