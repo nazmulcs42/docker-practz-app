@@ -98,6 +98,38 @@ CMD ["npm", "run", "start:dev"]
 ~ Simple Docker project setup Done! with docker image, container and volumes
 
 
+### Push Image into Docker Hub
+
+Login into docker hub if not. Then, tag image by a tag name `docker tag image_name tag_name` and after this push into the tag repository
+- `$ docker login`
+- `$ docker tag docker-practz-app nazmulcs42/docker-practz-app`
+- `$ docker push nazmulcs42/docker-practz-app`
+
+
+### Pull Image from Docker Hub
+Select an image to pull into your local repo. Then make a pull request for the targeted image file.
+- Got to docker hub
+- `$ docker pull nazmulcs42/docker-practz-app`
+
+
+- `$ docker ps`
+- `$ docker ps -a`
+- `$ docker rm -f $(docker ps -aq)`
+- `$ docker images`
+- `$ docker rm <container_name>`
+- `$ docker rm -f <container_name>`
+- `$ docker rmi <image_name>`
+- `$ docker rmi -f <image_name>`
+- 
+- 
+
+
+
 ## Chapter 2: Docker Composer Configuration and Introduction
 
-- comming soon...
+- `$ docker-compose up`
+- `$ docker-compose down`
+- `$ docker-compose up --build`
+- `$ docker-compose down -v`
+- `$ docker-compose up -d`
+- `$ docker-compose up -d --build`
