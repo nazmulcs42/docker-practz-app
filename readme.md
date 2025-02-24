@@ -13,7 +13,7 @@
 - add index.js file and add basic node code to create and run simple api endpoints.
 
 
-##### Basic index.js file contents ----starts------
+#### Basic index.js file contents ----starts------
 
 import express from 'express';
 import cors from 'cors';
@@ -33,10 +33,10 @@ app.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });
 
-##### Basic dockerfile index.js file contents ----ends------
+#### Basic dockerfile index.js file contents ----ends------
 
 
-##### Basic dockerfile contents ----starts------
+#### Basic dockerfile contents ----starts------
 
 FROM node:22.0.0-alpine
 
@@ -52,10 +52,10 @@ EXPOSE 3000
 
 CMD ["npm", "run", "start:dev"]
 
-##### Basic dockerfile contents ----ends------
+#### Basic dockerfile contents ----ends------
 
 
-##### Basic Package.json file contents----starts----
+#### Basic Package.json file contents----starts----
 
 {
   "name": "practz-01",
@@ -78,7 +78,7 @@ CMD ["npm", "run", "start:dev"]
   }
 }
 
-##### Basic Package.json file ----ends----
+#### Basic Package.json file ----ends----
 
 
 #### Build Docker Image
