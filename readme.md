@@ -5,8 +5,8 @@
 
 ### Todo List
 
-- npm init -y
-- npm i express cors body-parser nodemon
+- `$ npm init -y
+- `$ npm i express cors body-parser nodemon
 - add on package.json: 
     -  "type": "module",
     - scripts:  "start:dev": "nodemon index.js"
@@ -89,13 +89,13 @@ CMD ["npm", "run", "start:dev"]
 
 
 ### Build Docker Image
-docker build -t docker-practz-img . 
+`$ docker build -t docker-practz-img . 
 
 ### Build Docker container from the image
-docker run --name docker-practz-container -p 3000:3000 --rm docker-practz-img
+`$ docker run --name docker-practz-container -p 3000:3000 --rm docker-practz-img
 - or
 ### Build Docker container and volumes from the image by using nodemon package so that  live changes can affect the container image
-docker run --name docker-practz-container -p 3000:3000 --rm -v D:/pratz/docker-practz/practz-01:/app  docker-practz-img
+`$ docker run --name docker-practz-container -p 3000:3000 --rm -v D:/pratz/docker-practz/practz-01:/app  docker-practz-img
 
 
 ~ Simple Docker project setup Done! with docker image, container and volumes
