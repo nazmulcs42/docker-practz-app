@@ -8,9 +8,9 @@
 - `$ npm init -y`
 - `$ npm i express cors body-parser nodemon`
 - add on package.json: 
-    -  "type": "module",
-    - scripts:  "start:dev": "nodemon index.js"
-- add index.js file and add basic node code to create and run simple api endpoints.
+    -  `"type": "module",`
+    - scripts:  `"start:dev": "nodemon index.js"`
+- add `index.js` file and add basic node code to create and run simple api endpoints.
 
 
 ### index.js
