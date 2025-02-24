@@ -10,9 +10,4 @@ RUN npm install
 
 EXPOSE 3000
 
-
-# Development
 CMD ["npm", "run", "start:dev"]
-
-# Production
-# CMD ["npm", "run", "start:prod"]
